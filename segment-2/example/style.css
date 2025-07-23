@@ -1,0 +1,26 @@
+div.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.container > div.box {
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  animation: mantul 0.5s infinite alternate;
+}
+
+@keyframes mantul {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
